@@ -10,21 +10,33 @@
   <body>
 
 
-    <div>
-
-        <img class="headIcon" src="./img/boy69Circle.png">
 
 
-    </div>
 
-    
-    
-    
-    
-<!-- <div class="header">
-    <img class="headImg" src="./img/myst.jpg">
-</div> -->
+<video autoplay muted loop id="myVideo">
+    <source src="./img/water.mp4" type="video/mp4">
+  </video>
 
+
+<div class="content">
+
+    <img class='imageLogo' src="./img/boy69Circle.png"></img>
+
+</div>
+
+
+
+
+<div class="content1">
+
+
+
+    <h1 class="title">M Y S T</h1>
+    <p class="title">COMING SOON</p>
+
+
+
+</div>
 
 
 
@@ -35,10 +47,10 @@
 <style> 
 
 
-body{
+/* body{
 
 
-    background: url(./img/myst.jpg) no-repeat center center fixed; 
+    background: url(./img/water.mp4) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,50 +59,74 @@ body{
 
 }
 
+*/
 
-.spacer{
-
-
-    margin-top: 50px;
-
-}
-
-.spacerT{
+.imageLogo{
 
 
-    font-size: 30px;
-    color: yellow;
-
-}
-
-
-
-.headIcon{
-
-
-    width: 15%;
-    
+    width: 10%;
     cursor: pointer;
+    padding-left: 2%;
+    padding-top: 2%;
+
 
 }
 
-/* 
-.header{
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  /* bottom: 0; */
+  /* background: rgba(0, 0, 0, 0.5); */
+  color: #f1f1f1;
+  
+  
+}
+
+.content1 {
+  position: fixed;
+  color: #d1ec33;
+  width: 100%;
+  top: 40%;
+  
+  
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
 
 
-    margin: 0;
-    padding: 0;
+
+
+.title{
+
+
+    text-align: center;
 
 }
 
-.headImg{
 
-    
-    margin: 0;
-    
-
-
-} */
 
 
 </style>
@@ -99,13 +135,6 @@ body{
 
 
 
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
 
   </body>
 </html>
